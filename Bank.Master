@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Bank.master.cs" Inherits="Bank.Bank" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+            <table class="auto-style2">
+                <tr>
+                    <td class="auto-style3">
+                        <strong>🌴 BANK OF KONASEEMA🌴</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB"   DynamicHorizontalOffset="2" Font-Names="Times New Roman,Times,serif" Font-Size="Large" ForeColor="#3333CC" Orientation="Horizontal" CssClass="auto-style1" Width="100%">
+                            <DynamicHoverStyle BackColor="#666666"  Font-Bold="True" ForeColor="White" />
+                            <DynamicMenuStyle BackColor="#E3EAEB" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <Items>
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="New Account" Value="New Account" NavigateUrl="~/New account.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Balance " Value="Balance " NavigateUrl="~/balance.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Deposit" Value="Deposit" NavigateUrl="~/Desposit.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Withdraw" Value="Withdraw" NavigateUrl="~/Withdraw.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Transfer" Value="Transfer" NavigateUrl="~/Transfer.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Close A/c" Value="Close A/c" NavigateUrl="~/Close.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="About us" Value="About us" NavigateUrl="~/Aboutus.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="40px" Width="100%" />
+                            <StaticSelectedStyle BackColor="#1C5E55" />
+                        </asp:Menu>
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Copyrights:-JanakiRam Gadi.. 2023</td>
+                </tr>
+            </table>
+            <br />
+            <br />
+        </div>
+    </form>
+</body>
+</html>
